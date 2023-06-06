@@ -289,3 +289,153 @@ main{
         margin-top: -100px;
     }
 }
+
+/******CONTACTO****/
+
+.formulario {
+    background-image: url(../img/contrato.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.p {
+    color: #FAFBFE;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 350px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+form p {
+    color: #FAFBFE;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+.boton {
+    background: #31384a;
+    color: #FAFBFE;
+    padding: 20px;
+    font-size: 17px;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*
+@media (max-width: 480px) {
+    main{
+        width: 100%;
+    }
+}
+
+/****PIE DE PAGINA***/
+
+.pie-pagina {
+    width: 100%;
+    background-color: white;
+}
+
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 50px;
+    height: 50px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #31384a;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #31384a;
+    margin-bottom: 10px;
+
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: #31384a;
+    text-align: center;
+    transition: all 300ms ease;
+
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #111111;
+    padding: 15px 10px;
+    text-align: center;
+    color: #FAFBFE;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+
+}

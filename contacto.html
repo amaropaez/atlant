@@ -25,10 +25,10 @@
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Productos</a></li>
-                        <li><a href="#">Contactos</a></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./contacto.html">Contactos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,9 +41,70 @@
 
     <main>
 
-       
+         <!-- CONTACTO-->
+         <div id="contacto" class="formulario">
+            <form action="https://formsubmit.co/amaroj@atlant.com.ar" method="POST">
+                <p>Complete el formulario<br>y reciba una asesoría gratuita</p>
+                <input type="text" name="Nombre" class="form-control" placeholder="Nombre *">
+                <input type="email" name="Correo" class="form-control" placeholder="Email *">
+                <input type="text" name="Tel" class="form-control" placeholder="Teléfono *">
+                <input type="text" name="Consulta" class="form-control" placeholder="Motivo de su consulta">
+
+                <button type="submit" class="boton">Enviar consulta</button>
+
+                <input type="hidden" name="_next" value="http://www.atlant.com.ar/">
+                <input type="hidden" name="_captcha" value="false">
+
+                <span class="p">Los campos marcados con (*) son obligatorios</span>
+            </form>
+        </div>
 
     </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box-1">
+                <figure>
+                    <a>
+                        <img src="media/logo.png" alt="">
+                    </a>
+                </figure>
+
+            </div>
+
+            <!-- <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <P></P>
+                <P></P>
+            </div>
+-->
+
+            <div class="box">
+<!--                <h2> SEGUINOS:</h2>
+                <div class="red-social">
+                    <a href="https://wa.me/5491167575272" target="_blank" class="fa-brands fa-whatsapp">
+
+                    </a>
+                    <a href="https://www.facebook.com/info.law.partners" target="_blank" class="fa-brands fa-facebook">
+
+                    </a>
+                    <a href="https://www.instagram.com/law.partners.ar" target="_blank" class="fa-brands fa-instagram">
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/law-partners-ar/" target="_blank"
+                        class="fa-brands fa-linkedin-in">
+                    </a>
+                </div>
+                -->
+            </div>
+
+        </div>
+
+        <div class="grupo-2">
+            <small> &copy;2023 <b>Nadia Belén Amaro</b> - Todos los Derechos Reservados. </small>
+        </div>
+
+    </footer>
+
 
     <script src="js/script.js"></script>
 </body>
