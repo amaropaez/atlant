@@ -9,10 +9,7 @@
 }
 
 body{
-    background-image: url(../media/portadahome.jpg);
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    margin: 0;
+    background: #F5F5F5;
 }
 
 header{
@@ -77,65 +74,9 @@ header{
     display: none;
 }
 
-/*PORTADA - COVER*/
-
-main{
-    max-width: 1200px;
-    height: calc(100vh + 800px);
-    padding: 40px;
-    margin: auto;
-}
-
-.cover{
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-}
-
-.text__information-cover{
-    width: 50%;
-}
-
-.text__information-cover h1{
-    font-size: 50px;
-}
-
-.text__information-cover p{
-    font-size: 18px;
-    margin-top: 40px;
-}
-
-.buttons__cover{
-    display: flex;
-    margin-top: 40px;
-}
-
-.btn__readMore-cover{
-    padding: 14px 40px;
-    border: none;
-    color: black;
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
-    margin-left: 10px;
-    transition: background 300ms;
-}
-
-.btn__readMore-cover:hover{
-    background: #E8E8E8;
-}
-
-.media__cover{
-    width: 50%;
-}
-
-.media__cover video{
-    width: 100%;
-    margin-top: -40px;
-}
 
 /*BANNER*/
-
+/*
 .container__banner{
     margin-top: 80px;
 }
@@ -198,7 +139,7 @@ main{
     position: relative;
     margin-top: -100px;
     opacity: 0.6;
-}
+}*/
 
 
 @media (max-width: 1024px){
@@ -295,6 +236,73 @@ main{
 }
 
 
+/******CONTACTO****/
+
+.formulario {
+    background-image: url(../img/contrato.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.p {
+    color: #FAFBFE;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 350px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+form p {
+    color: #FAFBFE;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+.boton {
+    background: #31384a;
+    color: #FAFBFE;
+    padding: 20px;
+    font-size: 17px;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.contenedor {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+@media (max-width: 480px) {
+    main{
+        width: 100%;
+    }
+}
+
 /****PIE DE PAGINA***/
 
 .pie-pagina {
@@ -377,3 +385,13 @@ main{
 
 
 }
+
+
+
+
+
+
+
+
+
+
