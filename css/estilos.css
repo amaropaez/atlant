@@ -21,7 +21,7 @@ header {
     height: 100%;
     margin: auto;
     padding: 40px;
-    padding-top: 80px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -245,6 +245,8 @@ section h1 {
 
 .text__information-cover h1{
     font-size: 50px;
+    margin-top: 80px;
+
 }
 
 .text__information-cover p{
