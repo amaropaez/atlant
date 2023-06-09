@@ -15,80 +15,45 @@
 </head>
 
 <body>
-    <header id="header">
-        <img src="./media/logo.png" alt="logo" class="logo">
-        <div class="menu"></div>
-        <nav>
-            <ul class="menulist">
-                <li><a href="./index.html" class="active">Home</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./contacto.html">Contactos</a></li>
-            </ul>
-        </nav>
+    <header>
+
+        <div class="container__header">	
+
+            <div class="logo">
+                <img src="media/logo.png" alt="">
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./servicios.html">Servicios</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./contacto.html">Contactos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <i class="fa-solid fa-bars" id="icon_menu"></i>
+           
+        </div>
+
     </header>
 
-    <section>
-        <img src="./media/slider-4.png" alt="" id="nube1">
-        <img src="./media/slider-3.png" alt="" id="transparente">
-        <!--<img src="./images/nube2.png" alt="nube2" id="nube2">-->
-        <h2 id="slogan">ATLANT</h2>
-        <!--<a href="#" id="btn">Ahora</a>-->
-        <img src="./media/slider-2.png" alt="" id="fondo">
-        <img src="./media/slider-1.png" alt="" id="viento">
-       <!-- <img src="./images/persona.png" alt="persona" id="persona">
--->
-    </section>
+    <!--------PARALLAX-->
 
-    <section id="content"></section>
-
-
-    <footer class="pie-pagina">
-        <div class="grupo-1">
-            <div class="box-1">
-                <figure><a>
-                        <img src="media/logo.png" alt="">
-                    </a>
-                </figure>
-
-            </div>
-
-            <!-- <div class="box">
-                <h2>SOBRE NOSOTROS</h2>
-                <P></P>
-                <P></P>
-            </div>
--->
-
-            <div class="box">
-                <!--                <h2> SEGUINOS:</h2>
-                <div class="red-social">
-                    <a href="https://wa.me/5491167575272" target="_blank" class="fa-brands fa-whatsapp">
-
-                    </a>
-                    <a href="https://www.facebook.com/info.law.partners" target="_blank" class="fa-brands fa-facebook">
-
-                    </a>
-                    <a href="https://www.instagram.com/law.partners.ar" target="_blank" class="fa-brands fa-instagram">
-                    </a>
-
-                    <a href="https://www.linkedin.com/company/law-partners-ar/" target="_blank"
-                        class="fa-brands fa-linkedin-in">
-                    </a>
-                </div>
-                -->
-            </div>
-
-        </div>
-
-        <div class="grupo-2">
-            <small> &copy;2023 <b>Nadia Belén Amaro</b> - Todos los Derechos Reservados. </small>
-        </div>
-
-    </footer>
-
-    
-    <script src="./js/script.js"></script>
+    <main>
+        <section class="no-parallax">
+          <h1>ATLANT</h1>
+        </section>
+        <section class="parallax bg">
+          <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quibusdam!</h1>
+        </section>
+        <section class="no-parallax">
+          <h1>Suscríbete</h1>
+        </section>
+      </main>
+   
+   
 
 </body>
 

@@ -1,265 +1,242 @@
-/* PROPIEDADES GENERALES */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
-    background-color: #fff; 
-    min-height: 100vh;
-    overflow-x: hidden; 
-    background: linear-gradient(0deg, rgba(207,224,255,1) 0%, rgb(225, 224, 235) 100%);
+    background: #F5F5F5;
 }
 
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 30px 80px 30px 50px;
+    height: 100px;
+}
+
+.container__header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 80px;
     display: flex;
-    object-fit: cover;
     justify-content: space-between;
     align-items: center;
-    z-index: 2000;
 }
 
-header .logo{
-    width: 15vmax;
-    cursor: pointer;
+.logo img{
+    width: 180px;
 }
 
-nav ul{
+.menu nav ul{
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-nav ul li{
+.menu nav ul li{
     list-style: none;
-    margin-left: 20px;
+    padding: 0px 20px;
 }
 
-nav ul li a {
+.menu nav ul li a{
+    font-size: 16px;
     text-decoration: none;
-    padding: 6px 15px;
-    border-radius: 20px;
-    color: #110011;
+    color: #000;
+    transition: opacity 300ms;
 }
 
-nav ul li a:hover,
-nav ul li a.active{
-    background: #DDCCDD;
-    color: #110011;
-}
-section{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    overflow: hidden;
+.menu nav ul li a:hover{
+    opacity: 0.6;
 }
 
-section::before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    background: linear-gradient(to top, #1C0522, transparent);
-    z-index: 10;
-}
-
-section img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    pointer-events: none;
-}
-
-section #slogan{
-    position: absolute;
-    color: #110011;
-    font-size: 7vmax;
-    text-align: center;
-    font-family: 'Rancho', sans-serif;
-    line-height: 0.8em;
-    white-space: nowrap;
-    transform: translateY(-200px);
-    margin-left: 10vw;   
-}
-
-section #btn{
-    text-decoration: none;
-    display: inline-block;
-    padding: 8px 30px;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: 500;
-    letter-spacing: 2px;
-    background: #110011;
-    border-radius: 20px; 
-    transform: translateY(20px); 
-    transform: translateX(60px); 
-}
-section #btn:hover{
-    background: #3d003d;
-}
-
-.sec{
-    background: #1c0522;
-    position: relative;
-    padding: 80px;
-}
-
-.sec h2{
-    font-size: 3.5vw;
-    color: #fff;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.sec h3{
-    font-size: 2vw;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.sec p{
-    font-size: 1.2em;
-    color: #fff;
-}
-
-/* AHORA HAREMOS EL RESPONSIVO */
-@media (max-width: 991px){
-    .sec{
-        padding: 60px;
-    }
-    .sec p{
-        font-size: 1em;
-    }
-    header .menulist{
-        opacity: 0;
-    }
-    nav ul{
-        display: none;
-        opacity: 0;
-        visibility: hidden;
-    }
-    nav.active ul{
-        position: relative;
-        top: 50px;
-        margin-left: -150px;
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-    }    
-    header .menu{
-        position: absolute;
-        right: 40px;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        background-image:  url('./../images/lista.svg');
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    header .menu.active{
-        background-image: url('./../images/close.svg');
-        background-size: 25px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-/****PIE DE PAGINA***/
-
-.pie-pagina {
-    width: 100%;
-    background-color: white;
-}
-
-.pie-pagina .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-}
-
-.pie-pagina .grupo-1 .box figure {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pie-pagina .grupo-1 .box figure img {
-    width: 50px;
-    height: 50px;
-}
-
-.pie-pagina .grupo-1 .box h2 {
-    color: #31384a;
-    margin-bottom: 25px;
-    font-size: 20px;
-}
-
-.pie-pagina .grupo-1 .box p {
-    color: #31384a;
-    margin-bottom: 10px;
-
-}
-
-.pie-pagina .grupo-1 .red-social a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
+.btn__header-register,
+.btn__register-cover{
+    padding: 14px 50px;
+    border: none;
+    background: #000;
     color: white;
-    margin-right: 10px;
-    background-color: #31384a;
-    text-align: center;
-    transition: all 300ms ease;
-
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background, color, 300ms;
 }
 
-.pie-pagina .grupo-1 .red-social a:hover {
-    color: aqua;
+
+.btn__header-register:hover,
+.btn__register-cover:hover{
+    background: #69F1A1;
+    color: #000;
 }
 
-.pie-pagina .grupo-2 {
-    background-color: #111111;
-    padding: 15px 10px;
-    text-align: center;
-    color: #FAFBFE;
+#icon_menu{
+    display: none;
 }
 
-.pie-pagina .grupo-2 small {
-    font-size: 15px;
-}
 
-@media screen and (max-width:800px) {
+@media (max-width: 1024px){
 
-    .pie-pagina .grupo-1 {
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
+    .container__header,
+    main{
+        padding: 20px;
     }
 
+    #icon_menu{
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+    }
 
+    .header__register{
+        display: none;
+    }
+
+    .menu{
+        height: 0px;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        overflow: hidden;
+        z-index: 10;
+        box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.5);
+        transition: all 300ms;
+    }
+
+    .menu nav ul{
+        padding: 20px 0px;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    .menu nav ul li{
+        padding: 10px 40px;
+    }
+
+    .mostrar_menu{ 
+        /*CLASE MANIPULADA POR JS*/
+        height: 235px;
+    }
+
+    .text__information-cover h1{
+        font-size: 40px;
+    }
+
+    .text__information-cover p{
+        font-size: 16px;
+    }
+
+    .banner__text h2{
+        font-size: 22px;
+    }
+
+    #icon_heart{
+        left: -60px;
+    }
+
+    .banner__icon-fire{
+        right: -20px;
+    }
 }
+
+@media (max-width: 920px){
+    .text__information-cover{
+        width: 100%;
+    }
+
+    .media__cover{
+        display: none;
+    }
+
+    .banner{
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    #icon_fire{
+        display: none;
+    }
+
+    #icon_heart{
+        left: 0;
+    }
+
+    .banner__text{
+        width: 100%;
+        margin-top: -100px;
+    }
+}
+/************* EFECTO PARALLAX*************/
+
+main 
+{
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+section 
+{
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+}
+
+section h1
+{
+  text-align: center;
+  font-size: 4rem;
+  font-family: sans-serif;
+}
+
+.no-parallax 
+{
+  background-color: #5333ed;
+  z-index: 999;
+}
+
+.parallax h1 
+{
+  width: 60%;
+  font-size: 2rem;
+}
+
+.parallax::after 
+{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.bg::after 
+{
+  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("./assets/photo.jpg");
+  background-size: cover;
+}
+
+@media screen and (min-width: 768px) 
+{
+  section h1 
+  {
+    font-size: 8rem;
+  }
+  
+  .parallax h1 
+  {
+    font-size: 4rem;
+  }
+}
+
+
