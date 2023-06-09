@@ -1,17 +1,30 @@
-document.getElementById("icon_menu").addEventListener("click", mostrar_menu);
+let header = document.getElementById('header')
 
-function mostrar_menu(){
+let nube1 = document.getElementById('nube1')
+let transparente = document.getElementById('transparente')
+let nube2 = document.getElementById('nube2')
+let slogan = document.getElementById('slogan')
+let btn = document.getElementById('btn')
+let viento = document.getElementById('viento')
+let persona = document.getElementById('persona')
 
-    document.querySelector(".menu").classList.toggle("mostrar_menu");
+
+window.addEventListener('scroll', function(){
+    let value = window.scrollY;
     
-}
+    transparente.style.marginLeft =  value * 0.7 + 'px';
+    nube1.style.left = value* -5  + 'px';
+    nube2.style.left = value* -5  + 'px';
+    btn.style.marginTop = value * 0.7 + 'px';
+    slogan.style.marginBottom =   value* -1  + 'px';
+    viento.style.left = value* -5  + 'px';
+    header.style.marginTop = value * 0.4 + 'px';
+    persona.style.marginLeft = value* 4  + 'px';
 
-window.onscroll = function () {
-    var posicion = window.pageYOffset || document.documentElement.scrollTop;
-    var elemento1 = document.getElementById("icon_heart");
-    var elemento2 = document.getElementById("icon_fire");
-    elemento1.style.bottom = posicion * 0.1 + "px";
-    elemento2.style.top = posicion * 0.1 + "px";
-}
+})
 
-var rellax = new Rellax ('.rellax')
+const navigation = document.querySelector('nav')
+document.querySelector('.menu').onclick = function (){
+    this.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
