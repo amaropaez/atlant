@@ -74,6 +74,11 @@ header {
     display: none;
 }
 
+#selected{
+    background: #9a7deb;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
 
 @media (max-width: 1024px) {
 

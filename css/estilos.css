@@ -51,6 +51,12 @@ header{
     opacity: 0.6;
 }
 
+#selected{
+    background: #9a7deb;
+    padding: 10px 40px;
+    border-radius: 50px;
+}
+
 .btn__header-register,
 .btn__register-cover{
     padding: 14px 50px;
