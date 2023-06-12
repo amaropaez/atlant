@@ -276,13 +276,9 @@ footer{
     padding: 50px 0px;
     font-family: 'Nunito', sans-serif;
     background-color: var(--color-esqueleto);
-    background-image: url("../media/background-footer.svg");
+    background-image: url("../media/footer.png");
     background-size: cover;
 
-    /*webkit-mask-image: url("../media/background-footer.svg");
-    mask-image: url("../media/background-footer.svg");
-    -webkit-mask-size: cover;
-    mask-size: cover;*/
 }
 
 .container__footer{
