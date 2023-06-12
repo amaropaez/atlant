@@ -279,8 +279,8 @@ footer{
     background-image: url("../media/background-footer.svg");
     background-size: cover;
 
-    /*webkit-mask-image: url("../Images/background-footer.svg");
-    mask-image: url("../Images/background-footer.svg");
+    /*webkit-mask-image: url("../media/background-footer.svg");
+    mask-image: url("../media/background-footer.svg");
     -webkit-mask-size: cover;
     mask-size: cover;*/
 }
