@@ -74,10 +74,11 @@ header{
     display: none;
 }
 
-#selected{
-    background: #9a7deb;
-    padding: 10px 40px;
-    border-radius: 50px;
+.select{
+    background: #359EF9;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
 }
 
 @media (max-width: 1024px){
