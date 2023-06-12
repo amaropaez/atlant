@@ -271,145 +271,224 @@ nav ul li a{
 
 /******TARJETAS******/
 
-.container__card{
-    max-width: 1200px;
-    padding: 20px;
-    padding-bottom: 40px;
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 940px;
+    gap: 15px;
     margin: auto;
-    margin-top: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center
+    justify-items: center;
+    align-items: center;
 }
 
-.card{
+.card {
+    height: 250px;
     width: 300px;
+    overflow: hidden;
+    margin: auto;
+    padding: 10px 30px;
+    border-radius: 2%;
+    border: 1px solid #fff;
+    transition: all .4s ease-in-out;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    background: linear-gradient(-135deg, #c850c0, #4158d0);
+}
+
+.card:hover {
+    height: 500px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-encabezado img {
     position: relative;
-    margin: 20px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 300ms;
+    border-radius: 50%;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border-top: 8px solid#fff;
+    border-bottom: 8px solid #fff;
+    object-fit: cover;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.card-encabezado {
+    position: relative;
+}
+
+.card-encabezado:before,
+.card-encabezado:after {
+    content: '';
+    position: absolute;
+    opacity: 0.7;
+}
+
+.card-encabezado:after {
+    border-radius: 50%;
+    z-index: 20;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 25px;
+}
+
+.card-encabezado:before {
+    width: 70px;
+    height: 70px;
+    bottom: 0;
+    left: -10px;
     border-radius: 20px;
+    background-color: rgb(238, 42, 98);
+    transform: rotate(120deg)
 }
 
-.card:hover{
-    box-shadow: 1px 1px 20px -10px #20202049;
-}
 
-.card:hover .info__description{
-    margin-top: 0;
-    border-radius: 0px 0px 20px 20px;
-
-}
-
-.card:hover .icon{
-    margin-top: -110px;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.icon{
-    width: 100%;
-    height: 220px;
-    background: #EFF3F5;
-    padding: 20px;
+.card-iconos {
     display: flex;
     justify-content: center;
-    align-items: center;
     position: relative;
-    z-index: 1;
-    transition: all 400ms cubic-bezier(0.5,0,0,1);
-    border-radius: 20px;
+    margin-bottom: 20px;
+    list-style: none;
 }
 
-.icon i{
-    font-size: 150px;
+.card-iconos li {
+    border-radius: 50%;
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    line-height: 40px;
+    text-align: center;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+.desplazar {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translate(-45px);
+}
+
+.agrandar {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.card:hover .agrandar {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.card:hover .desplazar {
+    transform: translate(0px);
+    opacity: 1;
+}
+
+.card-iconos li a {
+    color: #7813d6;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background: #fff;
+    display: block;
+    line-height: 40px;
+    transition: all 0.3s;
+}
+
+.card-iconos li a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #7813d6;
+}
+
+
+.card-iconos li:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.card-iconos li:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.card-iconos li:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.card-iconos:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.card-iconos:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.card-iconos:nth-child(3) {
+    transition-delay: 0.4s;
+}
+
+.info-personal:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.info-personal:nth-child(3) {
+    margin: 15px 0;
+}
+
+.info-personal {
     color: #fff;
-    transition: all 400ms cubic-bezier(0.5,0,0,1);
 }
 
-.info__description{
-    width: 100%;
-    height: 220px;
-    color: #474747;
-    background: #EFF3F5;
-    padding: 20px;
-    margin-top: -220px;
-    transition: all 400ms cubic-bezier(0.5,0,0,1);
-    border-radius: 20px;
+
+.card-acciones {
+    text-align: center;
+    margin-top: 25px;
 }
 
-.info__description p{
-    font-size: 14px;
-    margin-top: 10px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-line-clamp: 5;
-    line-clamp: 5;
-    overflow: hidden;
-}
-
-.info__description input{
-    margin-top: 20px;
-    padding: 10px 40px;
-    background: #2196f3;
-    color: white;
-    font-weight: 500;
-    font-size: 14px;
-    cursor: pointer;
+.botones {
+    color: #fff;
     border: none;
-    border-radius: 20px;
-    box-shadow: 1px 1px 30px -5px #20202049;
-    transition: box-shadow 300ms;
+    border-radius: 30px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    padding: 8px 15px;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #7579ff, #b224ef);
 }
 
-.info__description input:hover{
-    box-shadow: 1px 1px 30px -5px #20202070;
+.botones:hover {
+    cursor: pointer;
+    width: 100%;
 }
 
-
-/*COLOR DE LAS CARD*/
-
-.c1:hover .icon{
-    background: #DD4B25;
-}
-
-.c1 .icon i{
-    color: #DD4B25;
-}
-
-.c1:hover .icon i{
-    color: #fff;
-}
-
-
-.c2:hover .icon{
-    background: #146EB0;
-}
-
-.c2 .icon i{
-    color: #146EB0;
-}
-
-.c2:hover .icon i{
-    color: #fff;
+.botones span {
+    margin-right: 10px;
+    font-size: 20px;
 }
 
 
-.c3:hover .icon{
-    background: #E8B600;
+@media screen and (max-width: 600px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
 }
 
-.c3 .icon i{
-    color: #E8B600;
-}
 
-.c3:hover .icon i{
-    color: #fff;
+@media screen and (max-width: 852px) {
+    .contenedor {
+        gap: 5px;
+    }
 }
-
 
 /*AQUI COMIENZA EL FOOTER*/
 
@@ -417,8 +496,8 @@ footer{
     width: 100%;
     padding: 50px 0px;
     font-family: 'Nunito', sans-serif;
-    background-color: var(--color-esqueleto);
-    background-image: url("../media/footer.png");
+    /*background-color: var(--color-esqueleto);
+    */background-image: url("../media/footer.png");
     background-size: cover;
 
 }
