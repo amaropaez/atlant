@@ -78,7 +78,7 @@ nav ul li a{
 }
 
 .select{
-    background: #359EF9;
+    background: #033f74;
     padding: 10px 30px;
     color: white;
     border-radius: 20px;
@@ -117,14 +117,14 @@ nav ul li a{
 }
 
 .container__cover{
-    max-width: 1200px;
+   width: 100%;
     margin: auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     position: relative;
 
-    background-image: url(../images/background-cover.svg);
+    background-image: url(../media/prueba1.png);
     background-size: cover;
     background-position: bottom;
 }
@@ -137,21 +137,21 @@ nav ul li a{
 
 .cover h1{
     max-width: 400px;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 900;
-    color: #373737;
+    color: #020341;
 }
 
 .cover h2{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 900;
-    color: #FEBA0B;
-    margin-top: -30px;
+    color: #020341;
+    margin-top: auto;
 }
 
 .cover p{
-    margin-top: 10px;
-    color: #373737;
+    margin-top: 5px;
+    color: #020341;
 }
 
 .cover input[type="button"]{
@@ -161,7 +161,7 @@ nav ul li a{
     font-weight: 600;
     border: none;
     color: white;
-    background: #FEBA0B;
+    background: #02014e;
     border-radius: 20px;
     box-shadow: 1px 1px 30px -5px #20202049;
     cursor: pointer;
@@ -275,8 +275,8 @@ footer{
     width: 100%;
     padding: 50px 0px;
     font-family: 'Nunito', sans-serif;
-    *background-color: var(--color-esqueleto);
-    background-image: url("../Images/background-footer.svg");
+    background-color: var(--color-esqueleto);
+    background-image: url("../media/background-footer.svg");
     background-size: cover;
 
     /*webkit-mask-image: url("../Images/background-footer.svg");
