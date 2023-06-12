@@ -329,6 +329,10 @@ footer{
     font-size: 20px;
 }
 
+.box__footer img{
+    width: 40px;
+}
+
 .box__copyright{
     max-width: 1200px;
     margin: auto;
