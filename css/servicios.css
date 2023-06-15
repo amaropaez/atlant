@@ -178,7 +178,7 @@ header {
 
 .container__background-triangle{
     max-width: 1200px;
-    height: 600px;
+   height: 600px;
     margin: auto;
     position: fixed;
     top: 50%;
@@ -196,7 +196,7 @@ header {
 .triangle1{
     width: 250px;
     height: 250px;
-    background: linear-gradient(to left, #0ea1e6, #1e67c7);
+    background: linear-gradient(to left, #0ea1e6, #cddcf0);
     right: 100px;
     top: 100px;
     animation: t1 8s ease infinite;
@@ -205,7 +205,7 @@ header {
 .triangle2{
     width: 200px;
     height: 200px;
-    background: linear-gradient(to left, #ee8105, #c7371e);
+    background: linear-gradient(to left, #3990e2, #649fc7);
     top: 350px;
     animation: t2 9s ease infinite;
 }
@@ -213,7 +213,7 @@ header {
 .triangle3{
     width: 300px;
     height: 300px;
-    background: linear-gradient(to left, #1b8fc5, #df0f8f);
+    background: linear-gradient(to left, #506975, #0fa4df);
     left: 200px;
     animation: t3 7s ease infinite;
 }
@@ -305,14 +305,14 @@ header {
     font-size: 20px;
     font-weight: 400;
     margin-top: 20px;
-    color: #fff;
+    color: #16053d;
 }
 
 .card p{
     margin-top: 20px;
     font-size: 14px;
     font-weight: 300;
-    color: #fff;
+    color: #16053d;
     letter-spacing: 0.5px;
 }
 
@@ -326,7 +326,7 @@ header {
 .footer__card{
     margin-top: 10px;
     display: flex;
-    color: #fff;
+    color: #16053d;
     justify-content: space-between;
 }
 
@@ -355,7 +355,8 @@ footer{
     font-family: 'Nunito', sans-serif;
     /*background-color: var(--color-esqueleto);
     */background-image: url("../media/footer.png");
-    background-size: cover;
+    background-size: cover; 
+    position: absolute;
 
 }
 
