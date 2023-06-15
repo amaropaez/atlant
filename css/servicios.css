@@ -356,8 +356,8 @@ footer{
     /*background-color: var(--color-esqueleto);
     */background-image: url("../media/footer.png");
     background-size: cover; 
-    position: absolute;
-
+   /* position: absolute;
+*/
 }
 
 .container__footer{
@@ -428,4 +428,59 @@ footer{
     border: none;
     height: 1px;
     background-color: #7a7a7a;
+}
+
+
+@media screen and (max-width: 300px) {
+  
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    font-family: 'Nunito', sans-serif;
+    /*background-color: var(--color-esqueleto);
+    */background-image: url("../media/footer.png");
+    background-size: cover; 
+ position: absolute;
+
+}
+}
+
+@media screen and (max-width: 760px) {
+ 
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    font-family: 'Nunito', sans-serif;
+    /*background-color: var(--color-esqueleto);
+    */background-image: url("../media/footer.png");
+    background-size: cover; 
+ position: absolute;
+  
+}
+}
+
+@media screen and (max-width: 950px) {
+   
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    font-family: 'Nunito', sans-serif;
+    /*background-color: var(--color-esqueleto);
+    */background-image: url("../media/footer.png");
+    background-size: cover; 
+    position: absolute;
+ 
+}
+}
+
+
+@media screen and (max-width: 1000px) {
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    font-family: 'Nunito', sans-serif;
+    /*background-color: var(--color-esqueleto);
+    */background-image: url("../media/footer.png");
+    background-size: cover; 
+}
 }

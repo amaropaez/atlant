@@ -550,7 +550,13 @@ header {
     font-size: 20px;
 }
 
-
+@media screen and (max-width: 300px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+       align-items:flex-start;
+        justify-content:flex-start;
+    }
+}
 @media screen and (max-width: 760px) {
     .contenedor {
         grid-template-columns: 1fr;
