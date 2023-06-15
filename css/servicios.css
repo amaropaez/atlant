@@ -338,7 +338,7 @@ header {
 @media screen and (max-width:1200px) {
     .container__cards{
         position: relative;
-        top: 0;
+    top: 0;
         left: 0;
         transform: none;
         margin-top: 100px;
@@ -351,13 +351,14 @@ header {
 
 footer{
     width: 100%;
+    
     padding: 50px 0px;
     font-family: 'Nunito', sans-serif;
     /*background-color: var(--color-esqueleto);
-    */background-image: url("../media/footer.png");
-    background-size: cover; 
-   /* position: absolute;
-*/
+    */
+    background-image: url("../media/footer.png");
+   background-size: cover; 
+
 }
 
 .container__footer{
@@ -434,12 +435,7 @@ footer{
 @media screen and (max-width: 300px) {
   
 footer{
-    width: 100%;
-    padding: 50px 0px;
-    font-family: 'Nunito', sans-serif;
-    /*background-color: var(--color-esqueleto);
-    */background-image: url("../media/footer.png");
-    background-size: cover; 
+     
  position: absolute;
 
 }
@@ -448,39 +444,19 @@ footer{
 @media screen and (max-width: 760px) {
  
 footer{
-    width: 100%;
-    padding: 50px 0px;
-    font-family: 'Nunito', sans-serif;
-    /*background-color: var(--color-esqueleto);
-    */background-image: url("../media/footer.png");
-    background-size: cover; 
+   
  position: absolute;
   
 }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1200px) {
    
 footer{
-    width: 100%;
-    padding: 50px 0px;
-    font-family: 'Nunito', sans-serif;
-    /*background-color: var(--color-esqueleto);
-    */background-image: url("../media/footer.png");
-    background-size: cover; 
+  
     position: absolute;
  
 }
 }
 
 
-@media screen and (max-width: 1000px) {
-footer{
-    width: 100%;
-    padding: 50px 0px;
-    font-family: 'Nunito', sans-serif;
-    /*background-color: var(--color-esqueleto);
-    */background-image: url("../media/footer.png");
-    background-size: cover; 
-}
-}

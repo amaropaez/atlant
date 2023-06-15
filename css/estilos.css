@@ -555,6 +555,7 @@ header {
         grid-template-columns: 1fr;
        align-items:flex-start;
         justify-content:flex-start;
+        position: relative;
     }
 }
 @media screen and (max-width: 760px) {
@@ -562,6 +563,7 @@ header {
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
 }
 
@@ -572,6 +574,7 @@ header {
         gap: 5px;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
 }
 
