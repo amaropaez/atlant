@@ -278,7 +278,7 @@ header {
     }
 }
 
-/*
+
 @media screen and (max-width: 760px){
 
     .container__nav{
@@ -287,7 +287,7 @@ header {
         align-items: center;
     }
 
-    /*.btn__menu{
+    .btn__menu{
         display: flex;
     }
 
@@ -305,7 +305,7 @@ header {
         right: 0px;
     }
 
-   /* nav ul{
+   nav ul{
         flex-direction: column;
     }
 
@@ -317,7 +317,7 @@ header {
         transform: scale(0);
         animation: none;
     }
-}*/
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
@@ -348,7 +348,7 @@ header {
 .contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 940px;
+    width: auto;
     gap: 15px;
     margin: auto;
     justify-items: center;
