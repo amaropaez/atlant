@@ -474,9 +474,9 @@ main{
 
 .card-iconos li a {
     color: #2013d6;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
     background: #fff;
     display: block;
     line-height: 40px;
@@ -559,34 +559,17 @@ main{
     font-size: 20px;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 600px) {
     .contenedor {
         grid-template-columns: 1fr;
-       align-items:flex-start;
-        justify-content:flex-start;
-        position: relative;
-    }
+       }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 852px) {
     .contenedor {
-        grid-template-columns: 1fr;
-
-        align-items: flex-start;
-        justify-content: center;
-        position: relative;
-    }
-}
-
-
-@media screen and (max-width: 950px) {
-    .contenedor {
-        grid-template-columns: 1fr;
         gap: 5px;
-        align-items: center;
-        justify-content: center;
-        position: relative;
+    
     }
-}*/
+}
 
 /*AQUI COMIENZA EL FOOTER*/
 
