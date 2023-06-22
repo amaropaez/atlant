@@ -344,11 +344,20 @@ header {
 }
 
 /******TARJETAS******/
+main{
+
+    font-family: 'Courier New', Courier, monospace;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
 .contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: auto;
+    width: 940px;
     gap: 15px;
     margin: auto;
     justify-items: center;
@@ -561,7 +570,8 @@ header {
 @media screen and (max-width: 760px) {
     .contenedor {
         grid-template-columns: 1fr;
-        align-items: center;
+
+        align-items: flex-start;
         justify-content: center;
         position: relative;
     }
@@ -576,7 +586,7 @@ header {
         justify-content: center;
         position: relative;
     }
-}
+}*/
 
 /*AQUI COMIENZA EL FOOTER*/
 
