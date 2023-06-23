@@ -190,13 +190,13 @@ background-size: 100vw 100vh;
 
 
 
-.formulario {
- /*   background-image: url(../media/fondodecontacto.png);
-   */ background-size: 100vw 100vh;
+/*.formulario {
+    background-image: url(../media/fondodecontacto.png);
+    background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;
 
-}
+}*/
 
 .p {
     color: #FAFBFE;
@@ -252,7 +252,7 @@ form input {
 
 
 @media (max-width: 480px) {
-    main{
+    form{
         width: 100%;
     }
 }
