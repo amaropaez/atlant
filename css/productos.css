@@ -9,7 +9,11 @@
 }
 
 body {
-    background: #F5F5F5;
+    /*background: #F5F5F5;*/
+    background-image: url(/media/prueba2.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 header {
@@ -177,10 +181,7 @@ header {
 }
 
 .cover{
-    background-image: url(/media/prueba1.png);
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    margin: 0;
+    
     display: flex;
     justify-content: center;
     
@@ -203,6 +204,7 @@ header {
 
 
 .container__cards{
+
     width:100%;
     margin: auto;
     display: flex;
