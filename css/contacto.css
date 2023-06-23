@@ -9,7 +9,11 @@
 }
 
 body{
-    background: #F5F5F5;
+    /*background: #F5F5F5;*/
+    background-image: url(../media/fondodecontacto.png);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
 }
 
 header{
@@ -176,13 +180,13 @@ header{
 
 
 /******CONTACTO****/
-main {
+/*main {
 
-    background-image: url(../media/fondodecontacto.png);
+ background-image: url(../media/fondodecontacto.png);
 background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;
-}
+}*/
 
 
 
