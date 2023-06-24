@@ -11,6 +11,7 @@
 body {
     /*background: #F5F5F5;*/
     background-image: url(/media/prueba2.png);
+    background-repeat: no-repeat;
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;
