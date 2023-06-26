@@ -200,12 +200,12 @@ main{
 }
 
 .text__information-cover h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .text__information-cover p{
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .buttons__cover{
