@@ -185,7 +185,7 @@ header {
 main{
     max-width: 1200px;
     height: calc(100vh + 800px);
-/*    padding: 40px;*/
+padding: 40px;
     margin: auto;
 }
 
@@ -200,7 +200,7 @@ main{
 }
 
 .text__information-cover h1{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .text__information-cover p{
