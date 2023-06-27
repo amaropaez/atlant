@@ -9,9 +9,96 @@
 }
 
 body {
-background: #F5F5F5;
     margin: 0;
+
 }
+
+body .container__background-triangle {
+    max-width: 1200px;
+    height: 600px;
+    /* margin: auto;
+    */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.triangle {
+    width: 300px;
+    height: 300px;
+    background: red;
+    position: absolute;
+}
+
+.triangle1 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(to left, #0ea1e6, #cddcf0);
+    right: 100px;
+    top: 100px;
+    animation: t1 8s ease infinite;
+}
+
+.triangle2 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to left, #3990e2, #649fc7);
+    top: 350px;
+    animation: t2 9s ease infinite;
+}
+
+.triangle3 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left, #506975, #0fa4df);
+    left: 200px;
+    animation: t3 7s ease infinite;
+}
+
+@keyframes t1 {
+    0% {
+        transform: rotate(45deg) translateY(0px);
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(20px);
+    }
+
+    100% {
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+@keyframes t2 {
+    0% {
+        transform: rotate(65deg) translateY(0px);
+    }
+
+    50% {
+        transform: rotate(65deg) translateY(20px);
+    }
+
+    100% {
+        transform: rotate(65deg) translateY(0px);
+    }
+}
+
+@keyframes t3 {
+    0% {
+        transform: rotate(45deg) translateY(0px);
+    }
+
+    50% {
+        transform: rotate(45deg) translateY(20px);
+    }
+
+    100% {
+        transform: rotate(45deg) translateY(0px);
+    }
+}
+
+
 
 header {
     height: 100px;
@@ -77,7 +164,7 @@ header {
 
 
 
-.select{
+.select {
     background: #3f7cb1;
     padding: 10px 30px;
     color: white;
@@ -177,16 +264,27 @@ header {
     }
 }
 
+
+
+
+/*PORTADA - COVER*/
+
+main{
+    max-width: 1200px;
+    height: calc(100vh + 800px);
+padding: 40px;
+    margin: auto;
+}
+
 .cover{
-    
-  display: flex;
+    position: relative;
+    display: flex;
     justify-content: center;
-    
+    margin-top: 60px;
 }
 
 .text__information-cover{
-    width: 80%;
-    
+    width: 50%;
 }
 
 .text__information-cover h1{
@@ -195,95 +293,36 @@ header {
 
 .text__information-cover p{
     font-size: 18px;
+    margin-top: 30px;
+}
+
+.buttons__cover{
+    display: flex;
     margin-top: 40px;
 }
 
-
-
-/************* EFECTO PARALLAX*************/
-
-.container__background-triangle{
-    max-width: 1200px;
-   height: 600px;
-    margin: auto;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.btn__readMore-cover{
+    padding: 14px 40px;
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background 300ms;
 }
 
-.triangle{
-    width: 300px;
-    height: 300px;
-    background: red;
-    position: absolute;
+.btn__readMore-cover:hover{
+    background: #E8E8E8;
 }
 
-.triangle1{
-    width: 250px;
-    height: 250px;
-    background: linear-gradient(to left, #0ea1e6, #cddcf0);
-    right: 100px;
-    top: 100px;
-    animation: t1 8s ease infinite;
-}
 
-.triangle2{
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(to left, #3990e2, #649fc7);
-    top: 350px;
-    animation: t2 9s ease infinite;
-}
 
-.triangle3{
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(to left, #506975, #0fa4df);
-    left: 200px;
-    animation: t3 7s ease infinite;
-}
 
-@keyframes t1 {
-    0%{
-        transform: rotate(45deg) translateY(0px);
-    }
-    50%{
-        transform: rotate(45deg) translateY(20px);
-    }
-    100%{
-        transform: rotate(45deg) translateY(0px);
-    }
-}
 
-@keyframes t2 {
-    0%{
-        transform: rotate(65deg) translateY(0px);
-    }
-    50%{
-        transform: rotate(65deg) translateY(20px);
-    }
-    100%{
-        transform: rotate(65deg) translateY(0px);
-    }
-}
-
-@keyframes t3 {
-    0%{
-        transform: rotate(45deg) translateY(0px);
-    }
-    50%{
-        transform: rotate(45deg) translateY(20px);
-    }
-    100%{
-        transform: rotate(45deg) translateY(0px);
-    }
-}
-
-/*************AQUI COMIENZAN LAS TARJETAS DE PRODUCTOS****************/
+/********** AQUI COMIENZAN LAS TARJETAS*******/
 
 .container__cards{
-
     width:100%;
     margin: auto;
     display: flex;
@@ -403,10 +442,9 @@ header {
 
 
 
-
 /*AQUI COMIENZA EL FOOTER*/
 
-footer{
+footer {
     width: 100%;
     position: relative;
     padding: 50px 0px;
@@ -414,11 +452,11 @@ footer{
     /*background-color: var(--color-esqueleto);
     */
     background-image: url("../media/footer.png");
-   background-size: cover; 
+    background-size: cover;
 
 }
 
-.container__footer{
+.container__footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -427,17 +465,17 @@ footer{
     padding-top: 100px;
 }
 
-.box__footer{
+.box__footer {
     display: flex;
     flex-direction: column;
     padding: 40px;
 }
 
-.box__footer .logo img{
+.box__footer .logo img {
     width: 180px;
 }
 
-.box__footer .terms{
+.box__footer .terms {
     max-width: 350px;
     margin-top: 20px;
     font-weight: 500;
@@ -446,43 +484,43 @@ footer{
 
 }
 
-.box__footer h2{
+.box__footer h2 {
     margin-bottom: 30px;
     color: #242424;
     font-weight: 700;
 }
 
-.box__footer a{
+.box__footer a {
     margin-top: 10px;
     color: #7a7a7a;
     font-weight: 600;
 }
 
-.box__footer a:hover{
+.box__footer a:hover {
     opacity: 0.8;
 }
 
-.box__footer a .fab{
+.box__footer a .fab {
     font-size: 20px;
 }
 
-.box__footer img{
+.box__footer img {
     width: 40px;
 }
 
-.box__copyright{
+.box__copyright {
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 40px;
 }
 
-.box__copyright p{
+.box__copyright p {
     margin-top: 20px;
     color: #7a7a7a;
 }
 
-.box__copyright hr{
+.box__copyright hr {
     border: none;
     height: 1px;
     background-color: #7a7a7a;
@@ -490,30 +528,28 @@ footer{
 
 
 @media screen and (max-width: 300px) {
-  
-footer{
-     
- position: absolute;
 
-}
+    footer {
+
+        position: absolute;
+
+    }
 }
 
 @media screen and (max-width: 760px) {
- 
-footer{
-   
- position: absolute;
-  
-}
+
+    footer {
+
+        position: absolute;
+
+    }
 }
 
 @media screen and (max-width: 1200px) {
-   
-footer{
-  
-    position: absolute;
- 
-}
-}
 
+    footer {
 
+        position: absolute;
+
+    }
+}
