@@ -335,7 +335,7 @@ header {
     font-weight: 500;
 }
 
-@media screen and (max-width:2000px) {
+@media screen and (max-width:4000px) {
     .container__cards{
         position: relative;
     top: 0;
